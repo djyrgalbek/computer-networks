@@ -1,0 +1,462 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+
+    <script src="../js/script.js" defer></script>
+    <title>Тестовое задание</title>
+</head>
+
+<body>
+    <div class="page page--header">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <div class="logo__img"></div>
+                    <h1 class="logo__title">КC</h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Глава 1</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Глава 2</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Глава 3</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Глава 4</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Глава 5</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Глава 6</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">Глава 7</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Глава 8</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Глава 9</a>
+                        </li>
+
+                        <li class="nav__list nav__list--active">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="inner inner--margin_top">
+                <h1 class="title-1 color-white">Компьютерные сети</h1>
+                <hr class="line">
+                <h1 class="title-3 color-blue"><span class="color-blue">Э</span>лектронное пособие</h1>
+
+                <!-- <div class="social">
+                    <a href="#">
+                        <div class="social__facebook"></div>
+                    </a>
+                    <a href="#">
+                        <div class="social__twitter"></div>
+                    </a>
+                    <a href="#">
+                        <div class="social__instagram"></div>
+                    </a>
+                    <a href="#">
+                        <div class="social__youtube"></div>
+                    </a>
+                </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="wrapper wrapper--flex">
+            <section class="section">
+                <div class="information">
+                    <div class="information__box">
+                        <h2 class="information__title color-black">Компьютерные сети</h2>
+                    </div>
+
+                    <h4 class="title-4 color-blue">Инструкция к тесту</h4>
+                    <p class="paragraph information__paragraph">Тест содержит 15 вопросов. В некоторых вопросах возможен
+                        один вариант ответа, правильный ответ оценивается в 1 балл, в некоторых вопросах более одного
+                        варианта ответа - оценивается в 2 балла. </p>
+                    <p class="paragraph information__paragraph">Количество вопросов в тесте: 15</p>
+
+                    <button class="startButton" id="startButton"
+                        onclick="showQuestion(); hiddenElem(this); visibilityElem('finishButton');">Старт</button>
+
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Оборудование, стоящее между сетями, использующими одинаковые протоколы,
+                        называется…</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question1"
+                                value="Мост">&nbsp;Мост</label>
+                        <label class="answers__label"><input type="radio" name="question1"
+                                value="Шлюз">&nbsp;Шлюз</label>
+                        <label class="answers__label"><input type="radio" name="question1"
+                                value="Шина">&nbsp;Шина</label>
+                        <label class="answers__label"><input type="radio" name="question1"
+                                value="Брандмауэр">&nbsp;Брандмауэр</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Раскройте аббревиатуру MAN:</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question2"
+                                value="Mega Areal Netword">&nbsp;Mega Areal Netword</label>
+                        <label class="answers__label"><input type="radio" name="question2"
+                                value="Metropolitan Areal Netword">&nbsp;Metropolitan Areal Netword</label>
+                        <label class="answers__label"><input type="radio" name="question2"
+                                value="Metropolitan Area Network">&nbsp;Metropolitan Area Network</label>
+                        <label class="answers__label"><input type="radio" name="question2"
+                                value="Mega Area Network">&nbsp;Mega
+                            Area Network</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Конфигурация локальной сети, при которой все ПК подсоединяются к одной линии
+                        связи.</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question3"
+                                value="Кольцо">&nbsp;Кольцо и шина</label>
+                        <label class="answers__label"><input type="radio" name="question3"
+                                value="Снежинка">&nbsp;Снежинка</label>
+                        <label class="answers__label"><input type="radio" name="question3"
+                                value="Звезда">&nbsp;Звезда</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Укажите какой топологии не существует:</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question4"
+                                value="Шина">&nbsp;Шина</label>
+                        <label class="answers__label"><input type="radio" name="question4"
+                                value="Дерево">&nbsp;Дерево</label>
+                        <label class="answers__label"><input type="radio" name="question4"
+                                value="Звезда">&nbsp;Звезда</label>
+                        <label class="answers__label"><input type="radio" name="question4"
+                                value="Снежинка">&nbsp;Снежинка</label>
+                        <label class="answers__label"><input type="radio" name="question4"
+                                value="Морской узел">&nbsp;Морской узел</label>
+                        <label class="answers__label"><input type="radio" name="question4"
+                                value="Кольцо">&nbsp;Кольцо</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Группа связанных между собой компьютеров, серверов, принтеров, расположенных в
+                        пределах здания, офиса или комнаты называется ...</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question5"
+                                value="корпоративная сеть">&nbsp;корпоративная сеть</label>
+                        <label class="answers__label"><input type="radio" name="question5"
+                                value="глобальная сеть">&nbsp;глобальная сеть</label>
+                        <label class="answers__label"><input type="radio" name="question5"
+                                value="локальная сеть">&nbsp;локальная сеть</label>
+                        <label class="answers__label"><input type="radio" name="question5"
+                                value="региональная сеть">&nbsp;региональная сеть</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Устройство, которое на стороне передатчика обеспечивает преобразование
+                        цифрового сигнала компьютера в модулированный аналоговый сигнал, а на стороне приемника
+                        выполняет обратное преобразование сигналов - </p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question6" value="Модем">&nbsp;Модем
+                        </label>
+                        <label class="answers__label"><input type="radio" name="question6"
+                                value="Сетевой коммутатор">&nbsp;Сетевой коммутатор</label>
+                        <label class="answers__label"><input type="radio" name="question6"
+                                value="Сетевой адаптер">&nbsp;Сетевой адаптер</label>
+                        <label class="answers__label"><input type="radio" name="question6"
+                                value="Принтер">&nbsp;Принтер</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Раскройте аббревиатуру WAN:</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question7"
+                                value="Word Area Network">&nbsp;Word Area Network </label>
+                        <label class="answers__label"><input type="radio" name="question7"
+                                value="Wide Areal Netword">&nbsp;Wide Areal Netword</label>
+                        <label class="answers__label"><input type="radio" name="question7"
+                                value="Work Area Netword">&nbsp;Work Area Netword</label>
+                        <label class="answers__label"><input type="radio" name="question7"
+                                value="Wide Area Network">&nbsp;Wide Area Network</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Компьютер, предназначенный для совместного использования, включающий в себя все
+                        ресурсы, называется...</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question8"
+                                value="файловый сервер">&nbsp;файловый сервер </label>
+                        <label class="answers__label"><input type="radio" name="question8"
+                                value="пользователь">&nbsp;пользователь</label>
+                        <label class="answers__label"><input type="radio" name="question8"
+                                value="рабочая станция">&nbsp;рабочая станция</label>
+                        <label class="answers__label"><input type="radio" name="question8"
+                                value="ведомым">&nbsp;ведомым</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Стандартный протокол сети Интернет:</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question9" value="PPP">&nbsp;PPP
+                        </label>
+                        <label class="answers__label"><input type="radio" name="question9"
+                                value="TCP/IP">&nbsp;TCP/IP</label>
+                        <label class="answers__label"><input type="radio" name="question9" value="ISO">&nbsp;ISO</label>
+                        <label class="answers__label"><input type="radio" name="question9"
+                                value="SLIP">&nbsp;SLIP</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Выберите правильное соответствие аббревиатуре LAN:</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question10"
+                                value="Location Area Network">&nbsp;Location Area Network </label>
+                        <label class="answers__label"><input type="radio" name="question10"
+                                value="Local Areal Network">&nbsp;Local Areal Network</label>
+                        <label class="answers__label"><input type="radio" name="question10"
+                                value="Local Area Netword">&nbsp;Local Area Netword</label>
+                        <label class="answers__label"><input type="radio" name="question10"
+                                value="Local Area Network">&nbsp;Local Area Network</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Конфигурация локальной сети, основанная на файловом сервере.</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question11"
+                                value="Снежинка и звезда">&nbsp;Снежинка и звезда</label>
+                        <label class="answers__label"><input type="radio" name="question11"
+                                value="Кольцо">&nbsp;Кольцо</label>
+                        <label class="answers__label"><input type="radio" name="question11"
+                                value="Шина">&nbsp;Шина</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Устройство, обеспечивающее сопряжение ПК с линией связи - </p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question12"
+                                value="Принтер">&nbsp;Принтер</label>
+                        <label class="answers__label"><input type="radio" name="question12"
+                                value="Модем">&nbsp;Модем</label>
+                        <label class="answers__label"><input type="radio" name="question12"
+                                value="Сетевой адаптер">&nbsp;Сетевой адаптер</label>
+                        <label class="answers__label"><input type="radio" name="question12"
+                                value="Сетевой концентратор">&nbsp;Сетевой концентратор</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Что относится к сетевому оборудованию?</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question13"
+                                value="Концентратор">&nbsp;Концентратор</label>
+                        <label class="answers__label"><input type="radio" name="question13"
+                                value="Коммутатор">&nbsp;Коммутатор</label>
+                        <label class="answers__label"><input type="radio" name="question13"
+                                value="Адаптер">&nbsp;Адаптер</label>
+                        <label class="answers__label"><input type="radio" name="question13"
+                                value="Все ответы верны">&nbsp;Все ответы верны</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Компьютеры или программы, переводящие данные из формата, принятого в одной сети
+                        в формат, принятой в другой.</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question14"
+                                value="мосты">&nbsp;мосты</label>
+                        <label class="answers__label"><input type="radio" name="question14"
+                                value="шины">&nbsp;шины</label>
+                        <label class="answers__label"><input type="radio" name="question14"
+                                value="брандмауэры">&nbsp;брандмауэры</label>
+                        <label class="answers__label"><input type="radio" name="question14"
+                                value="шлюзы">&nbsp;шлюзы</label>
+                    </div>
+                </div>
+
+                <div class="question">
+                    <p class="paragraph">Небольшие локальные сети, в которых все компьютеры являются функционально
+                        равноправными, называются...</p>
+
+                    <div class="answers">
+                        <label class="answers__label"><input type="radio" name="question15"
+                                value="Двуранговыми">&nbsp;Двуранговыми</label>
+                        <label class="answers__label"><input type="radio" name="question15"
+                                value="Равноправными">&nbsp;Равноправными</label>
+                        <label class="answers__label"><input type="radio" name="question15"
+                                value="Одноранговыми">&nbsp;Одноранговыми</label>
+                    </div>
+                </div>
+
+                <div id="rezult" class="rezult">
+                    <p class="paragraph">Ваш результат: <span id="rezNumber"></span></p>
+                    
+                </div>
+
+                <button id="finishButton" class="finishButton" onclick="completeTest(); checkTest();">Завершить</button>
+                <button id="resetButton" class="resetButton" onclick="resetButton(); hiddenElem(this);">Пройти еще раз</button>
+
+                <div class="breadcrumbs">
+                    <a href="page9.html" class="breadcrumbs__link" title="Глава 9. Маршрутизаторы и шлюзы.">Предыдущий</a>
+                    <a href="../index.html" class="breadcrumbs__link"
+                        title="Домой">Домой</a>
+                </div>
+            </section>
+
+            <aside class="aside">
+                <blockquote class="blockquote">
+                    Данный документ является электронным пособием по компьютерным сетям. Пособие
+                    содержит введение, 9 глав и 13 подглав.
+                </blockquote>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Компьютерные сети и протоколы</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Классификация локальных сетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Адресация компьютеров сети</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Система доменных имен DNS</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Топология локальных сетей (физическое соединение)</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Стек протоколов TCP/IP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">IP-адреса, IP-сети. Подсети и маски подсетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Статические и динамические IP-адреса. DHCP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Маршрутизаторы и шлюзы.</a>
+                        </li>
+
+                        <li class="nav__list nav__list--active">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+        </div>
+    </div>
+
+    <div class="page page--footer">
+        <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">О сайте</h4>
+                    <p class="paragraph color-whitish footer__text">Сайт предназначен для ознакомления с предметной
+                        областью — компьютерные сети</p>
+                    <p class="paragraph color-whitish footer__text">
+                        Разработчик: <a href="mailto:t.jyrgal@bk.ru">t.jyrgal@bk.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">Контакты</h4>
+                    <p class="paragraph color-whitish footer__text">
+                        Тел: <a href="tel:996702948968 ">+996702948968</a><br>
+                        Почта: <a href="mailto:crazyloster@mail.ru">crazyloster@mail.ru</a></p>
+                </div>
+
+                <div class="footer__box">
+                    <p class="paragraph color-whitish footer__text">
+                        &copy; Все права защищены 2019 - наст.
+                    </p>
+                </div>
+            </footer>
+        </div>
+    </div>
+</body>
+
+</html>

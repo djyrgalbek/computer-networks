@@ -1,0 +1,269 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Статические и динамические IP-адреса. DHCP</title>
+</head>
+
+<body>
+    <div class="page page--header">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <div class="logo__img"></div>
+                    <h1 class="logo__title">КC</h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Глава 1</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Глава 2</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Глава 3</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Глава 4</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Глава 5</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Глава 6</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">Глава 7</a>
+                        </li>
+
+                        <li class="nav__list nav__list--active">
+                            <a href="page8.html" class="nav__link">Глава 8</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Глава 9</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="inner inner--margin_top">
+                <h1 class="title-1 color-white">Компьютерные сети</h1>
+                <hr class="line">
+                <h1 class="title-3 color-blue"><span class="color-blue">Э</span>лектронное пособие</h1>
+
+                <!-- <div class="social">
+                            <a href="#">
+                                <div class="social__facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__twitter"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__instagram"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__youtube"></div>
+                            </a>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="wrapper wrapper--flex">
+            <section class="section">
+                <h2 class="title-2 color-black text-transform">Статические и динамические IP-адреса. DHCP</h2>
+
+                <p class="paragraph">Все IP-адреса должны быть уникальны во всем пространстве сети. Есть два способа
+                    задать эти адреса компьютерам сети.</p>
+
+                <h4 class="title-4 color-gray text-transform">Статические IP-адреса</h4>
+
+                <p class="paragraph">Статический IP-адрес присваивается компьютеру вручную. Он прописывается
+                    администратором сети в настройках протокола TCP/IP на каждом компьютере сети и жестко закрепляется
+                    за компьютером.</p>
+
+                <p class="paragraph">Важное преимущество: постоянное соответствие IP-адресов определенным компьютерам.
+                </p>
+
+                <p class="paragraph">Это позволяет, например, запретить определенному компьютеру выходить в Интернет,
+                    или определить, с какого компьютера выходили в Интернет и т.п.</p>
+
+                <p class="paragraph">В присвоении статических адресов компьютерам есть определенные неудобства:</p>
+
+                <ul class="list">
+                    <li class="list__item">администратор сети должен вести учет всех используемых адресов, чтобы
+                        исключить повторы;</li>
+                    <li class="list__item">при большом количестве компьютеров в локальной сети установка и настройка
+                        IP-адресов отнимают много времени.</li>
+                </ul>
+
+                <h4 class="title-4 color-gray text-transform">Динамические IP-адреса</h4>
+
+                <p class="paragraph">Если компьютеру не присвоен статический IP-адрес, то адрес назначается
+                    автоматически службой DHCP. Такой адрес называется динамическим адресом, т.к. при каждом подключении
+                    компьютера к локальной сети адрес может меняться, но всегда оставаться в пределах заданного
+                    диапазона. </p>
+
+                <p class="paragraph">Функция автоматического назначения IP-адреса гарантирует уникальность выдаваемого
+                    IP-адреса, но в одноранговой сети и в сети с сервером работает по разному.</p>
+
+                <h4 class="title-4 color-black">Сети с выделенным сервером</h4>
+
+                <p class="paragraph">В сетях, управляемых сервером, динамический IP-адрес назначается специальной
+                    серверной службой DHCP, входящей в состав Windows Server 2003. В параметрах службы DHCP
+                    администратором сети прописывается IP-диапазон, адреса из которого, будут выдаваться другим
+                    компьютерам сети. </p>
+
+                <p class="paragraph">Сервер, на котором работает эта служба, называется DHCP-сервер. Компьютер,
+                    получающий IP-адрес из сети, называется DHCP-клиент.</p>
+
+                <h4 class="title-4 color-black">Одноранговые сети</h4>
+
+                <p class="paragraph">В одноранговой сети нет DHCP-сервера, а на каждом компьютере установлен (по
+                    умолчанию) DHCP-клиент. Во время загрузки операционной системы DHCP-клиент пытается найти в сети
+                    доступный DHCP-сервер для получения IP-адреса. После неудачной попытки получить IP-адрес,
+                    DHCP-клиент данного компьютера включает встроенную функцию IANA (Internet Assigned Numbers
+                    Authority), которая назначает компьютеру IP-адрес и маску подсети, используя один из
+                    зарезервированных адресов. При этом служба IANA отслеживает уникальность адресов в сети.</p>
+
+                <p class="paragraph">Зарезервированные адреса назначаются из диапазона 169.254.0.0 до 169.254.255.255 с
+                    маской подсети 255.255.0.0. Последние два поля адреса представляют уникальный идентификатор клиента.
+                </p>
+
+                <p class="paragraph">Автоматическое назначение IP-адреса проводится последовательно на всех компьютерах
+                    сети.</p>
+
+                <div class="breadcrumbs">
+                    <a href="page7.html" class="breadcrumbs__link"
+                        title="Глава 7. IP-адреса, IP-сети. Подсети и маски подсетей">Предыдущий</a>
+                    <a href="page9.html" class="breadcrumbs__link"
+                        title="Глава 9. Маршрутизаторы и шлюзы.">Следующий</a>
+                </div>
+
+            </section>
+
+            <aside class="aside">
+                <blockquote class="blockquote">
+                    Данный документ является электронным пособием по компьютерным сетям. Пособие
+                    содержит введение, 9 глав и 13 подглав.
+                </blockquote>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Компьютерные сети и протоколы</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Классификация локальных сетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Адресация компьютеров сети</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Система доменных имен DNS</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Топология локальных сетей (физическое соединение)</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Стек протоколов TCP/IP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">IP-адреса, IP-сети. Подсети и маски подсетей</a>
+                        </li>
+
+                        <li class="nav__list nav__list--active">
+                            <a href="page8.html" class="nav__link">Статические и динамические IP-адреса. DHCP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Маршрутизаторы и шлюзы.</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+    <div class="page page--footer">
+        <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">О сайте</h4>
+                    <p class="paragraph color-whitish footer__text">Сайт предназначен для ознакомления с предметной
+                        областью — компьютерные сети</p>
+                    <p class="paragraph color-whitish footer__text">
+                        Разработчик: <a href="mailto:t.jyrgal@bk.ru">t.jyrgal@bk.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">Контакты</h4>
+                    <p class="paragraph color-whitish footer__text">
+                        Тел: <a href="tel:996702948968 ">+996702948968</a><br>
+                        Почта: <a href="mailto:crazyloster@mail.ru">crazyloster@mail.ru</a></p>
+                </div>
+
+                <div class="footer__box">
+                    <p class="paragraph color-whitish footer__text">
+                        &copy; Все права защищены 2019 - наст.
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

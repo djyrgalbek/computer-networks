@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Стек протоколов TCP/IP</title>
+</head>
+
+<body>
+    <div class="page page--header">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <div class="logo__img"></div>
+                    <h1 class="logo__title">КC</h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Глава 1</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Глава 2</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Глава 3</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Глава 4</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Глава 5</a>
+                        </li>
+
+                        <li class="nav__list  nav__list--active">
+                            <a href="page6.html" class="nav__link">Глава 6</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">Глава 7</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Глава 8</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Глава 9</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="inner inner--margin_top">
+                <h1 class="title-1 color-white">Компьютерные сети</h1>
+                <hr class="line">
+                <h1 class="title-3 color-blue"><span class="color-blue">Э</span>лектронное пособие</h1>
+
+                <!-- <div class="social">
+                            <a href="#">
+                                <div class="social__facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__twitter"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__instagram"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__youtube"></div>
+                            </a>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+    <div class="page">
+        <div class="wrapper wrapper--flex">
+            <section class="section">
+                <h2 class="title-2 color-black text-transform">Стек протоколов TCP/IP</h2>
+
+                <p class="paragraph">Это стандартизованный набор сетевых протоколов. В настоящее время - это основной
+                    набор протоколов взаимодействия в Интернете. Более подробно об этом стеке протоколов и не только о
+                    нем можно прочитать в этой статье.</p>
+
+                <p class="paragraph">В состав стека протоколов TCP/IP входят два основных протокола: IP, TCP и несколько
+                    вспомогательных протоколов.</p>
+
+                <ul class="list">
+                    <li class="list__item">Протокол IP (Internet Protocol) - основной протокол сетевого уровня.
+                        Определяет способ адресации на сетевом уровне. </li>
+                    <li class="list__item">Протокол TCP (Transmission Control Protocol) - протокол, обеспечивающий
+                        гарантированную доставку данных.</li>
+                </ul>
+
+                <h4 class="title-4 color-black"></h4>
+
+                <p class="paragraph">Протокол IP задает формат адреса узла (поэтому адреса компьютеров называются
+                    IP-адресами) и доставляет пакет данных. </p>
+
+                <p class="paragraph">Однако, на одном узле (компьютере сети) может функционировать параллельно несколько
+                    программ, которым требуется доступ к сети. Следовательно, данные внутри компьютерной системы должны
+                    распределяться между программами. Поэтому, при передаче данных по сети недостаточно просто
+                    адресовать конкретный узел. Необходимо также идентифицировать программу-получателя, что невозможно
+                    осуществить средствами протокола IP.</p>
+
+                <p class="paragraph">Другой серьезной проблемой IP является невозможность передачи больших массивов
+                    данных. Протокол IP разбивает передаваемые данные на пакеты, каждый из которых передается в сеть
+                    независимо от других. В случае если какие-либо пакеты потерялись, то модуль IP на принимающей
+                    стороне не сможет обнаружить потерю, т.е. целостность данных будет нарушена.</p>
+
+                <p class="paragraph">Для решения этих проблем разработан протокол TCP.</p>
+
+                <p class="paragraph">Каждой программе назначается номер TCP- порта в соответствии с ее функциональным
+                    назначением на основе определенных стандартов. Порт можно рассматривать как ячейку в почтовом
+                    отделении связи. Протокол IP определяет только адрес почтового отделения, а протокол TCP положит
+                    конверт в нужную ячейку.</p>
+
+                <p class="paragraph">Таким образом, стек протоколов IP и TCP обеспечивают полную адресацию:</p>
+
+                <ul class="list">
+                    <li class="list__item">номер TCP-порта позволяет однозначно идентифицировать программу на компьютере
+                        сети, </li>
+                    <li class="list__item">компьютер в сети однозначно определяется IP-адресом.</li>
+                </ul>
+
+                <p class="paragraph">Следовательно, комбинация IP-адреса и номера порта позволяет однозначно
+                    идентифицировать программу в сети. Такой комбинированный адрес называется сокетом (socket).</p>
+
+                <p class="paragraph">Дополнительно к этому, протокол TCP обеспечивает гарантированную доставку данных.
+                    Это обеспечивается тем, что принимающий компьютер подтверждает успешный прием данных. Если
+                    передающий компьютер не получает подтверждения, он пытается произвести повторную передачу.</p>
+
+                <div class="breadcrumbs">
+                    <a href="page5.html" class="breadcrumbs__link"
+                        title="Глава 5. Топология локальных сетей (физическое соединение)">Предыдущий</a>
+                    <a href="page7.html" class="breadcrumbs__link"
+                        title="Глава 7. IP-адреса, IP-сети. Подсети и маски подсетей">Следующий</a>
+                </div>
+            </section>
+
+            <aside class="aside">
+                <blockquote class="blockquote">
+                    Данный документ является электронным пособием по компьютерным сетям. Пособие
+                    содержит введение, 9 глав и 13 подглав.
+                </blockquote>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Компьютерные сети и протоколы</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Классификация локальных сетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Адресация компьютеров сети</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Система доменных имен DNS</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Топология локальных сетей (физическое соединение)</a>
+                        </li>
+
+                        <li class="nav__list  nav__list--active">
+                            <a href="page6.html" class="nav__link">Стек протоколов TCP/IP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">IP-адреса, IP-сети. Подсети и маски подсетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Статические и динамические IP-адреса. DHCP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Маршрутизаторы и шлюзы.</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+    <div class="page page--footer">
+        <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">О сайте</h4>
+                    <p class="paragraph color-whitish footer__text">Сайт предназначен для ознакомления с предметной
+                        областью — компьютерные сети</p>
+                    <p class="paragraph color-whitish footer__text">
+                        Разработчик: <a href="mailto:t.jyrgal@bk.ru">t.jyrgal@bk.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">Контакты</h4>
+                    <p class="paragraph color-whitish footer__text">
+                        Тел: <a href="tel:996702948968 ">+996702948968</a><br>
+                        Почта: <a href="mailto:crazyloster@mail.ru">crazyloster@mail.ru</a></p>
+                </div>
+
+                <div class="footer__box">
+                    <p class="paragraph color-whitish footer__text">
+                        &copy; Все права защищены 2019 - наст.
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>Система доменных имен DNS</title>
+</head>
+
+<body>
+    <div class="page page--header">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <div class="logo__img"></div>
+                    <h1 class="logo__title">КC</h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Глава 1</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Глава 2</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Глава 3</a>
+                        </li>
+
+                        <li class="nav__list  nav__list--active">
+                            <a href="page4.html" class="nav__link">Глава 4</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Глава 5</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Глава 6</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">Глава 7</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Глава 8</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Глава 9</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="inner inner--margin_top">
+                <h1 class="title-1 color-white">Компьютерные сети</h1>
+                <hr class="line">
+                <h1 class="title-3 color-blue"><span class="color-blue">Э</span>лектронное пособие</h1>
+
+                <!-- <div class="social">
+                            <a href="#">
+                                <div class="social__facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__twitter"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__instagram"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__youtube"></div>
+                            </a>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+
+
+    <div class="page">
+        <div class="wrapper wrapper--flex">
+            <section class="section">
+                <h2 class="title-2 color-black text-transform">Система доменных имен DNS </h2>
+
+                <p class="paragraph"><span class="bold">Система доменных имен DNS</span> дополнительно в статье.</p>
+
+                <p class="paragraph">В операционную систему Windows Server 2003 включена служба DNS (Domain Naming
+                    System - система доменных имен). </p>
+
+                <p class="paragraph">Служба DNS выполняет две основных функции:</p>
+
+                <ul class="list">
+                    <li class="list__item">организацию пространства имен; </li>
+                    <li class="list__item">обеспечение механизма разрешения, т.е. сопоставление «буквенного» адреса
+                        цифровому IP-адресу компьютера в сети.</li>
+                </ul>
+
+                <h4 class="title-4 color-gray text-transform">
+                    Пространство доменных имен
+                </h4>
+
+                <p class="paragraph">Пространство доменных имен имеет иерархическую структуру, которая представлена на
+                    рисунке.</p>
+
+                <img src="../image/pic4.1.jpg" class="drawing_in_chapter">
+
+                <p class="paragraph"><span class="bold">Корневой домен</span> располагается на самом верху иерархии и
+                    обозначается точкой.</p>
+
+                <p class="paragraph"><span class="bold">Домены верхнего уровня</span> создаются по определенному
+                    признаку. В них объединяются компьютеры сети по географическому признаку или роду деятельности.
+                    Например:</p>
+
+                <ul class="list">
+                    <li class="list__item">ru, uk и т.д. - определяют географическое положение (ru - Россия, uk –
+                        Украина)</li>
+                    <li class="list__item">com - коммерческие организации (например, microsoft.com); </li>
+                    <li class="list__item">edu - образовательные (например, mit.edu); </li>
+                    <li class="list__item">gov - правительственные организации (например, congress.gov); </li>
+                    <li class="list__item">org - некоммерческие организации (например, rfc-editor.org); </li>
+
+                    <li class="list__item">net - организации, поддерживающие части сети Internet (например, nsf.net).
+                    </li>
+                </ul>
+
+                <p class="paragraph"><span class="bold">Домены второго уровня</span> обычно относятся к названиям
+                    компаний и регистрируются владельцами доменов верхнего уровня.</p>
+
+                <p class="paragraph"><span class="bold">Домены третьего уровня</span> обычно относятся к подразделениям
+                    внутри компаний.</p>
+
+                <p class="paragraph">При формировании имени домена к нему добавляется имя родительского домена.
+                    Например, домен второго уровня microsoft.com, домен третьего уровня eng.microsoft.com.</p>
+
+                <p class="paragraph">Домены ниже третьего уровня, как правило, встречаются редко.</p>
+
+                <p class="paragraph"><span class="bold">Имена узлов.</span> Каждый компьютер, по другому узел или хост,
+                    в сети Internet однозначно определяется своим полным доменным именем, которое включает имя узла и
+                    имена всех доменов по направлению от узла к корню. </p>
+
+                <p class="paragraph">Например, компьютер имеет имя WinXP. Если собрать имена трех доменов по структуре,
+                    то получится полное доменное имя узла — winxp.test.fio.ru</p>
+
+                <p class="paragraph">Алгоритм работы службы DNS достаточно прост. </p>
+
+                <ul class="list">
+                    <li class="list__item">При установке операционной системы протокол TCP/IP настраивается на сервер
+                        имен того домена, в который входит данный компьютер.</li>
+                    <li class="list__item">Когда программе-клиенту требуется по доменному имени выяснить IP-адрес, она
+                        через протокол TCP/IP связывается с сервером имен, передавая ему свой запрос. </li>
+                    <li class="list__item">Сервер имен обрабатывает запрос. Если указанный домен входит в его базу
+                        данных, то сервер преобразует имя в IP-адрес и возвращает результат клиенту. </li>
+                    <li class="list__item">Если запрашиваемое доменное имя не входит в его базу, то он переадресует
+                        запрос вышестоящему серверу имен.</li>
+                </ul>
+
+                <div class="breadcrumbs">
+                    <a href="page3.html" class="breadcrumbs__link"
+                        title="Глава 3. Адресация компьютеров сети">Предыдущий</a>
+                    <a href="page5.html" class="breadcrumbs__link"
+                        title="Глава 5. Топология локальных сетей (физическое соединение)">Следующий</a>
+                </div>
+
+            </section>
+
+            <aside class="aside">
+                <blockquote class="blockquote">
+                    Данный документ является электронным пособием по компьютерным сетям. Пособие
+                    содержит введение, 9 глав и 13 подглав.
+                </blockquote>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Компьютерные сети и протоколы</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Классификация локальных сетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Адресация компьютеров сети</a>
+                        </li>
+
+                        <li class="nav__list  nav__list--active">
+                            <a href="page4.html" class="nav__link">Система доменных имен DNS</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Топология локальных сетей (физическое соединение)</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Стек протоколов TCP/IP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page7.html" class="nav__link">IP-адреса, IP-сети. Подсети и маски подсетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Статические и динамические IP-адреса. DHCP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Маршрутизаторы и шлюзы.</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+        </div>
+    </div>
+
+    <div class="page page--footer">
+        <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">О сайте</h4>
+                    <p class="paragraph color-whitish footer__text">Сайт предназначен для ознакомления с предметной
+                        областью — компьютерные сети</p>
+                    <p class="paragraph color-whitish footer__text">
+                        Разработчик: <a href="mailto:t.jyrgal@bk.ru">t.jyrgal@bk.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">Контакты</h4>
+                    <p class="paragraph color-whitish footer__text">
+                        Тел: <a href="tel:996702948968 ">+996702948968</a><br>
+                        Почта: <a href="mailto:crazyloster@mail.ru">crazyloster@mail.ru</a></p>
+                </div>
+
+                <div class="footer__box">
+                    <p class="paragraph color-whitish footer__text">
+                        &copy; Все права защищены 2019 - наст.
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>

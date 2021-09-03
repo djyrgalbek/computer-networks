@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link href="https://fonts.googleapis.com/css?family=Lato:100,100i,300,300i,400,400i,700,700i,900,900i&display=swap"
+        rel="stylesheet">
+    <link
+        href="https://fonts.googleapis.com/css?family=Pacifico&display=swap&subset=cyrillic,cyrillic-ext,latin-ext,vietnamese"
+        rel="stylesheet">
+
+    <link rel="stylesheet" href="../css/style.css">
+    <title>IP-адреса, IP-сети. Подсети и маски подсетей</title>
+</head>
+
+<body>
+    <div class="page page--header">
+        <div class="wrapper">
+            <header class="header">
+                <div class="logo">
+                    <div class="logo__img"></div>
+                    <h1 class="logo__title">КC</h1>
+                </div>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Глава 1</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Глава 2</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Глава 3</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Глава 4</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Глава 5</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Глава 6</a>
+                        </li>
+
+                        <li class="nav__list nav__list--active">
+                            <a href="page7.html" class="nav__link">Глава 7</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Глава 8</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Глава 9</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </header>
+            <div class="inner inner--margin_top">
+                <h1 class="title-1 color-white">Компьютерные сети</h1>
+                <hr class="line">
+                <h1 class="title-3 color-blue"><span class="color-blue">Э</span>лектронное пособие</h1>
+
+                <!-- <div class="social">
+                            <a href="#">
+                                <div class="social__facebook"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__twitter"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__instagram"></div>
+                            </a>
+                            <a href="#">
+                                <div class="social__youtube"></div>
+                            </a>
+                        </div> -->
+            </div>
+        </div>
+    </div>
+
+    <div class="page">
+        <div class="wrapper wrapper--flex">
+            <section class="section">
+                <h2 class="title-2 color-black text-transform">IP-адреса, IP-сети. Подсети и маски подсетей</h2>
+
+                <h4 class="title-4 color-gray text-transform">IP-адреса</h4>
+
+                <p class="paragraph">Каждый компьютер в локальной сети имеет свой уникальный адрес, так же как человек
+                    имеет свой почтовый адрес. Именно по этим адресам компьютеры находят друг друга в сети. Двух
+                    одинаковых адресов в одной сети быть не должно. Формат адреса стандартный и определен протоколом IP.
+                </p>
+
+                <p class="paragraph">IP-адрес компьютера записывается в 32 разрядах (4 октета). Каждый октет содержит
+                    десятичное число от 0 до 255 (в двоичном виде запись представляет последовательность 0 и 1).
+                    IP-адрес представляет собой четыре числа, разделяемых точкой. Например, компьютер с IP-адресом
+                    192.168.3.24. Общее число IP-адресов составляет 4,2 млрд., все адреса уникальны. </p>
+
+                <p class="paragraph">IP-адрес может быть присвоен не только компьютеру, но и другим сетевым устройствам,
+                    например, принт-серверу или маршрутизатору. Поэтому все устройства в сети принято называть узлами
+                    или хостами.</p>
+
+                <p class="paragraph">Одно и тоже физическое устройство (компьютер или др.) может иметь несколько
+                    IP-адресов. Например, если в компьютер установлено несколько сетевых адаптеров, то каждый адаптер
+                    должен иметь свой уникальный IP-адрес. Такие компьютеры используются для соединения нескольких
+                    локальных сетей и называются маршрутизаторами.</p>
+
+                <h4 class="title-4 color-gray text-transform">IP сети</h4>
+
+                <p class="paragraph">Чтобы быстро определить маршрут, по которому будет передаваться информация из одной
+                    локальной сети в другую, маршрутизатор может хранить в своей памяти IP-адреса компьютеров этих двух
+                    сетей.</p>
+
+                <p class="paragraph">В Интернете огромное количество сетей. Маршрутизаторам в Интернете придется хранить
+                    адреса всех компьютеров во всех сетях, что делает их работу практически невозможной.</p>
+
+                <p class="paragraph">Для указания местонахождения компьютера в сети, IP-адрес разделили на две части,
+                    одна содержит номер сети, другая содержит номер компьютера в этой сети. Аналогично наш почтовый
+                    адрес указывает улицу и дом на ней. </p>
+
+                <p class="paragraph">Для удобства, компьютеры с одним номером сети группируются в логические сети
+                    IP-сети. </p>
+
+                <p class="paragraph">Связь между логическими IP-сетями осуществляют маршрутизаторы, отвечающие за
+                    передачу данных. А сам процесс передачи данных - маршрутизацией.</p>
+
+                <p class="paragraph">Процесс целенаправленной доставки данных между IP-сетями, связанный с обеспечением
+                    безопасности передаваемых данных, преобразование адресов, фильтрацию и т.п., осуществляют другие
+                    специальные устройства – шлюзы.</p>
+
+                <h4 class="title-4 color-gray text-transform">Подсети и маски подсетей</h4>
+
+                <p class="paragraph">Введение адреса сети упростило проблемы маршрутизации, но не решило их до конца
+                    (например, в больших локальных сетях). Поэтому большую IP-сеть разбивают на несколько подсетей,
+                    присвоив каждой из них свой адрес. </p>
+
+                <p class="paragraph">Подсети - это отдельные, самостоятельно функционирующие части сети, имеющие свой
+                    идентификатор. </p>
+
+                <p class="paragraph">Для адреса подсети, в IP-адресе, выделяется пространство из адреса узла. </p>
+
+                <p class="paragraph">Для определения адреса сети и подсети используется маска подсети. Формат записи
+                    маски подсети такой же, как и формат IP-адреса, это четыре поля, разделяемых точкой. Значения полей
+                    маски задаются следующим образом:</p>
+
+                <ul class="list">
+                    <li class="list__item">все биты, установленные в 1, соответствуют идентификатору сети;</li>
+                    <li class="list__item">все биты, установленные в 0, соответствуют идентификатору узла.</li>
+                </ul>
+
+                <p class="paragraph">Если все биты октета установлены в 1, то это эквивалентно числу 255. Маска
+                    рассматривается только в паре с IP-адресом. Например, маска подсети 255.255.255.0 и адрес
+                    192.168.100.5 говорят о том, что 192.168.100 - это номер сети, а 5 - номер компьютера в этой сети.
+                </p>
+
+                <p class="paragraph">Просматривая адрес IP через маску подсети IP-протокол, определяет адрес сети, адрес
+                    подсети и номер узла.</p>
+
+                <p class="paragraph">Таким образом, в паре с IP-адресом компьютеров обязательно указывается маска
+                    подсети.</p>
+
+
+                <div class="breadcrumbs">
+                    <a href="page6.html" class="breadcrumbs__link"
+                        title="Глава 6. Стек протоколов TCP/IP">Предыдущий</a>
+                    <a href="page8.html" class="breadcrumbs__link"
+                        title="Глава 8. Статические и динамические IP-адреса. DHCP">Следующий</a>
+                </div>
+            </section>
+
+            <aside class="aside">
+                <blockquote class="blockquote">
+                    Данный документ является электронным пособием по компьютерным сетям. Пособие
+                    содержит введение, 9 глав и 13 подглав.
+                </blockquote>
+
+                <nav class="nav">
+                    <ul class="nav__menu">
+
+                        <li class="nav__list">
+                            <a href="../index.html" class="nav__link">Домой</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="introduction.html" class="nav__link">Введение</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page1.html" class="nav__link">Компьютерные сети и протоколы</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page2.html" class="nav__link">Классификация локальных сетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page3.html" class="nav__link">Адресация компьютеров сети</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page4.html" class="nav__link">Система доменных имен DNS</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page5.html" class="nav__link">Топология локальных сетей (физическое соединение)</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page6.html" class="nav__link">Стек протоколов TCP/IP</a>
+                        </li>
+
+                        <li class="nav__list  nav__list--active">
+                            <a href="page7.html" class="nav__link">IP-адреса, IP-сети. Подсети и маски подсетей</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page8.html" class="nav__link">Статические и динамические IP-адреса. DHCP</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="page9.html" class="nav__link">Маршрутизаторы и шлюзы.</a>
+                        </li>
+
+                        <li class="nav__list">
+                            <a href="test.html" class="nav__link">Тест</a>
+                        </li>
+                    </ul>
+                </nav>
+            </aside>
+
+        </div>
+    </div>
+
+    <div class="page page--footer">
+        <div class="wrapper">
+            <footer class="footer">
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">О сайте</h4>
+                    <p class="paragraph color-whitish footer__text">Сайт предназначен для ознакомления с предметной
+                        областью — компьютерные сети</p>
+                    <p class="paragraph color-whitish footer__text">
+                        Разработчик: <a href="mailto:t.jyrgal@bk.ru">t.jyrgal@bk.ru</a>
+                    </p>
+                </div>
+
+                <div class="footer__box">
+                    <h4 class="title-4 color-blue">Контакты</h4>
+                    <p class="paragraph color-whitish footer__text">
+                        Тел: <a href="tel:996702948968 ">+996702948968</a><br>
+                        Почта: <a href="mailto:crazyloster@mail.ru">crazyloster@mail.ru</a></p>
+                </div>
+
+                <div class="footer__box">
+                    <p class="paragraph color-whitish footer__text">
+                        &copy; Все права защищены 2019 - наст.
+                    </p>
+                </div>
+            </footer>
+        </div>
+
+    </div>
+</body>
+
+</html>
